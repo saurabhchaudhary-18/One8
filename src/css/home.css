@@ -1,0 +1,747 @@
+#home {
+    height: 93vh;
+    width: 100%;
+    display: flex;
+}
+
+#home .home-left {
+    height: 100%;
+    width: 50%;
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#home .home-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .home-right #home-img {
+    height: 500px;
+    width: 500px;
+    background: url("/shoes-img/home/3-a.png")no-repeat center center;
+    transform: rotate(33deg);
+    background-size: 100%;
+}
+
+#home .home-right a {
+    height: 510px;
+    width: 510px;
+    display: block;
+    background-color: rgba(207, 255, 207, 0.77);
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 13px;
+    transition: all 0.8s ease;
+}
+
+#home .home-right a:hover {
+    transform: scale(1.1);
+}
+
+.home-left .heading {
+    font-family: "Bree Serif", serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: rgb(34, 34, 34);
+}
+
+.home-left .subHeading {
+    font-family: "Bree Serif", serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin: 30px 0px;
+    color: rgb(34, 34, 34);
+}
+
+.homebtn {
+    padding: 15px 35px;
+    width: 230px;
+    background: none;
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.homebtn:hover {
+    background-color: tomato;
+    color: white;
+}
+
+/* #shoe-category CSS */
+
+#shoe-category {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 40px;
+    padding-top: 80px;
+}
+
+#shoe-category .box {
+    height: 350px;
+    width: 400px;
+    margin: 0px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+#shoe-category .box:hover{
+    box-shadow: 5px 15px 15px 8px #00000014;
+    transform: translateY(-10px);
+}
+
+#shoe-category .box h3 {
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 0.8px;
+    padding: 50px;
+}
+
+#shoe-category .box button {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    background: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 13px 32px;
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+
+#shoe-category .box button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#shoe-category .box button img {
+    width: 20px;
+    position: relative;
+    top: 5px;
+    left: 3px;
+}
+
+#shoe-category #box-1 {
+    background: url("/bg-img/bg-3.png")no-repeat center center/cover;
+}
+
+#shoe-category #box-2 {
+    background: url("/shoe-category/women-shoe.png")no-repeat center center/cover;
+}
+
+#shoe-category #box-3 {
+    background: url("/shoe-category/sports-shoe.jpg")no-repeat center center/cover;
+}
+
+/* section-one CSS */
+
+#section-one {
+    min-height: 130vh;
+    width: 100%;
+}
+
+#section-one .heading {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-one .heading h2 {
+    font-family: "Bree Serif", serif;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 100;
+    padding-bottom: 5px;
+}
+
+#section-one .line {
+    border: 1px solid tomato;
+    border-radius: 1px;
+    width: 130px;
+    animation: linemove 3s ease;
+}
+
+@keyframes linemove {
+    from {
+        transform: translateX(-800px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
+#section-one .shoe-container {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 350px);
+    grid-row-gap: 50px;
+    padding: 35px 40px;
+}
+
+.shoe-container .shoe-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-one .shoe-container .shoe-item {
+    height: 280px;
+    width: 270px;
+    background-color: #efefef;
+    margin: 0px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+    transition: all 0.8s ease;
+}
+
+#section-one .shoe-container .shoe-item img {
+    width: 250px;
+    height: 100%;
+    transition: all 0.8s ease;
+}
+
+.shoe-group .shoe-item .social-icons {
+    position: absolute;
+    bottom: 15px;
+}
+
+.shoe-group .shoe-item .social-icons a{
+    border: none;
+    border-radius: 50%;
+    display: inline-flex;
+    width: 37px;
+    height: 37px;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px 8px;
+    opacity: 0;
+    transition: all 0.8s ease;
+    background-color: white;
+    transform: translateY(20px);
+}
+
+.shoe-group .shoe-item .social-icons a:hover {
+    background-color: tomato;
+    filter: invert(100%);
+}
+
+
+.shoe-item:hover .shoe-item-img {
+    transform: scale(1.1);
+}
+
+.shoe-item:hover .social-icons a {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.shoe-container .shoe-group h3 {
+    font-family: "Bree Serif", serif;
+    font-weight: 100;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.shoe-container .shoe-group p {
+    font-family: "Jost", sans-serif;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #e16f37;
+}
+
+.shoe-container .shoe-group h3:hover {
+    color: #e16f37;
+} 
+
+
+/* #choice CSS */
+
+#choice {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 420px);
+    grid-template-rows: 460px;
+    justify-content: space-between;
+    padding: 40px 15px;
+}
+
+#choice .box {
+    font-family: "Jost", sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#choice .box img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+#choice .box:hover img {
+    transform: scale(1.1);
+}
+
+#choice .box .info {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 330px;
+}
+
+#choice .box .info h2 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000;
+    margin-bottom: 14px;
+}
+
+#choice .box .info a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    padding-bottom: 4px;
+    color: #2c2c2c;
+    display: inline-block;
+    width: 79px;
+    letter-spacing: 1px;
+}
+
+#choice .box .info .line {
+    width: 75px;
+    margin: auto;
+    border-bottom: 1px solid #2c2c2c;
+    transition: all 0.2s ease;
+}
+
+#choice .box .info a:hover .line {
+    width: 45px;
+}
+
+#choice #box-1 .info {
+    text-align: left;
+}
+
+#choice #box-3 .info {
+    text-align: right;
+}
+
+/* #offer css */
+
+#offer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 60px;
+}
+
+#offer .box {
+    width: 45%;
+    height: 260px;
+    font-family: "Jost", sans-serif;
+    font-weight: 100;
+    margin: 0px 25px;
+    position: relative;
+    color: white;
+    padding: 0px 250px 0px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+#offer .box h3 {
+    font-weight: 400;
+}
+
+#offer .box h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 45px;
+    margin: 15px 0px;
+}
+
+#offer .box a {
+    text-decoration: none;
+    color: white;
+    width: 90px;
+    border-bottom: 1px solid white;
+}
+
+#offer .box a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+
+#offer .box a h3 {
+    font-weight: 400;
+}
+
+#offer #box-1::after {
+    background: rgba(0, 0, 0, 0.4) url("/bg-img/bg-3.png")no-repeat center center/cover;
+    background-blend-mode: darken;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#offer #box-2::after {
+    background: rgba(0, 0, 0, 0.4) url("/bg-img/bg-4.jpg")no-repeat center center/cover;
+    background-blend-mode: darken;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* section-two CSS*/
+
+#section-two {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+#section-two .bg-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#section-two .bg-img {
+    height: 100%;
+    width: 100%;
+    background: url("/bg-img/bg-1.webp")no-repeat bottom center/cover;
+    transition: all 2s ease;
+}
+
+#section-two .bg-container:hover .bg-img {
+    transform: scale(1.1);
+}
+
+#section-two .info {
+    height: 100%;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 55px;
+}
+
+#section-two .info h1 {
+    color: white;
+    font-family: "Jost", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+#section-two .info p {
+    color: white;
+    font-family: "Jost", sans-serif;
+    margin: 30px 0px;
+    font-size: 1.1rem;
+}
+
+.btn-sm {
+    padding: 12px 22px;
+    width: 160px;
+    background: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 450;
+    border: none;
+}
+
+.btn-sm:hover {
+    background-color: #e16f37;
+    color: white;
+}
+
+/* instagram css */
+#instra-container {
+    width: 100%;
+    height: 75%;
+}
+
+#instra-container .heading {
+    padding: 30px;
+}
+
+#instra-container .heading h2 {
+    font-family: "Jost", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+#instra-container .heading h3 {
+    font-family: "Jost", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: tomato;
+    margin-top: 10px;
+}
+
+
+#instra-container .line {
+    border: 1px solid tomato;
+    border-radius: 1px;
+    width: 130px;
+    margin: auto;
+    animation: linemove 3s ease;
+}
+
+#instra {
+    width: 100%;
+    height: 310px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 15px;
+    padding: 30px 15px;
+}
+
+#instra .box {
+    position: relative;
+    overflow: hidden;
+}
+
+#instra .box .bg-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+}
+
+#instra .box .bg-back img {
+    width: 100%;
+    height: 100%;
+    transition: all 3s ease;
+}
+
+#instra .box .bg-upper {
+    width: 100%;
+    height: 100%;
+    background-color: #000000b3;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#instra .box .bg-upper img {
+    width: 60px;
+    height: 60px;
+    filter: invert(100%);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#instra .box .bg-upper img:hover {
+    transform: translateY(-10px);
+}
+
+#instra .box:hover .bg-back img {
+    transform: scale(1.2);
+}
+
+#instra .box:hover .bg-upper {
+    z-index: 10;
+}
+
+/* Shoes Featured and Compare */
+#shoe-compare {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-auto-rows: 4fr;
+    column-gap: 30px;
+    padding: 15px;
+    padding-bottom: 40px;
+}
+
+#shoe-compare .box {
+    border-bottom: 1px solid #e9e9e9;
+    font-family: "Jost", sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 7px 0px;
+}
+
+#shoe-compare .main {
+    margin-bottom: 5px;
+}
+
+#shoe-compare .box .topic {
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#shoe-compare .box.bottom {
+    border: none;
+}
+
+#shoe-compare .box img {
+    background-color: #efefef;
+    border-radius: 5px;
+    height: 130px;
+    width: 130px;
+    padding: 5px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#shoe-compare .box img:hover {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #00000014;
+}
+
+#shoe-compare .box .info a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#shoe-compare .box .info a:hover {
+    color: #b8920b;
+}
+
+
+#shoe-compare .box .info h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#shoe-compare .box.middle .price {
+    display: inline;
+    text-decoration: line-through;
+}
+
+#shoe-compare .box.middle span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #b8920b;
+}
+
+
+/* Services */
+
+#service {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 25px;
+    grid-column-gap: 45px;
+}
+
+#service .box {
+    font-family: "Jost", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    padding: 65px;
+}
+
+#service .box img {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    filter: invert(20%);
+    margin-bottom: 5px;
+}
+
+#service .box h3 {
+    color: #111;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 9px 0px;
+}
+
+#service .box h4 {
+    color: #7a7a7a;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#service .box:hover {
+    box-shadow: 0 15px 25px #00000014;
+    transform: translateY(-10px);
+}
+
+#service #box-1 {
+    background-color: rgb(223, 255, 223);
+}
+
+#service #box-2 {
+    background-color: rgb(255, 224, 255);
+}
+
+#service #box-3 {
+    background-color: rgb(223, 245, 255);
+}

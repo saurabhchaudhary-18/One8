@@ -1,0 +1,189 @@
+
+#cart-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 150px;
+}
+
+#cart {
+    background-color: white;
+    width: 90%;
+    padding: 0px 18px;
+    font-family: "Jost", sans-serif;
+}
+
+#cart .top {
+    border-bottom: 1px solid #DDD;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cart .top h1 {
+    align-self: center;
+    font-weight: 400;
+}
+
+#cart .top h4 {
+    align-self: flex-end;
+    color: #565959;
+    font-weight: 500;
+}
+
+#cart .center {
+    border-bottom: 1px solid #DDD;
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+    grid-template-rows: 220px;
+}
+
+#cart .center .left {
+    padding: 25px 55px;
+}
+
+#cart .center .left img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#cart .center .middle {
+    padding-top: 25px;
+    padding-bottom: 12px;
+}
+
+#cart .center .middle h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#cart .center .middle p {
+    color: green;
+    font-size: 1rem;
+    margin-top: 18px;
+}
+
+#cart .center .middle h4 {
+    font-weight: 500;
+}
+
+#cart .center .middle h4 #size {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#cart .center .middle h4 #colour {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#cart .center .middle .qty-delete {
+    margin-top: 18px;
+}
+
+
+#cart .center .middle label {
+    font-weight: 500;
+}
+
+#cart .center .middle select {
+    font-family: "Jost", sans-serif;
+    text-align: center;
+    cursor: pointer;
+    background-color: #b8920b;
+    color: white;
+    outline: none;
+    border-radius: 11px;
+    width: 55px;
+    border: none;
+    padding: 4px 12px;
+    transition: all 0.2s ease;
+}
+
+#cart .center .middle select:hover {
+    background-color: #d3ad24;
+    box-shadow: 0 15px 10px #00000014;
+}
+
+#cart .center .middle select option {
+    border: 2px solid red;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    justify-self: flex-end;
+}
+
+#cart .center .middle .btn-delete {
+    font-family: "Jost", sans-serif;
+    width: 58px;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 11px;
+    border: none;
+    background-color: #000000c9;
+    color: white;
+    font-weight: 400;
+    margin-left: 5px;
+    transition: all 0.2s ease;
+}
+
+#cart .center .middle .btn-delete:hover {
+    background-color: rgb(199, 76, 55);
+    box-shadow: 0 15px 10px #00000014;
+}
+
+#cart .center .right {
+    padding-top: 25px;
+    padding-bottom: 12px;
+    text-align: right;
+}
+
+#cart .center .right #offer{
+    display: inline;
+    font-weight: 600;
+    font-size: 11px;
+    background-color: #CC0C39;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 3px;
+}
+
+#cart .center .right #deal{
+    color: #CC0C39;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+#cart .center .right #price{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#cart .center .right #mrp{
+    color: #565959;
+    font-weight: 500;
+    margin: 12px 0px;
+    font-size: 16px;
+}
+
+#cart .center .right #mrp #mrp-price{
+    text-decoration: line-through;
+}
+
+#cart .bottom {
+    width: 100%;
+    height: 65px;
+    text-align: end;
+}
+
+#cart .bottom h2 {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+#cart .bottom h2 #total {
+    font-weight: 500;
+}
