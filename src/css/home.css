@@ -406,9 +406,7 @@
 }
 
 
-#offer .box a h3 {
-    font-weight: 400;
-}
+#offer .box a h3 {}
 
 #offer #box-1::after {
     background: rgba(0, 0, 0, 0.4) url("/bg-img/bg-3.png")no-repeat center center/cover;
