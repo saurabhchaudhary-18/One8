@@ -72,7 +72,7 @@ function Contact() {
       <form onSubmit={handleSubmit}>
       <div id="contact">
         <div className="form">
-          <h3>get in touch with us and we can help you</h3>
+          <h3>Get in touch with us and we can help you</h3>
           <h2>Come to us or ask a question right now</h2>
           <div className="form-input">
             <input type="text" placeholder="Your Name" value={name} onChange={(e)=>setName(e.target.value)} required />
